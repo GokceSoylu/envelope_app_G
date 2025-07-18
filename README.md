@@ -1,24 +1,20 @@
-# README
+# Envolope Budgeting App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* This app is built using Ruby on Rails with PostgreSQL as the database.
 
-* Ruby version
+* I used scaffold generators to quickly build the CRUD features for Envelopes and Incomes.
 
-* System dependencies
+* Users can add income and view it.
 
-* Configuration
+* Users can move income into envelopes.
 
-* Database creation
+* Users can spend from envelopes.
 
-* Database initialization
+* Balances are updated automatically.
 
-* How to run the test suite
+* Navigation and flash messages are added for better UX.
 
-* Services (job queues, cache servers, search engines, etc.)
+* No validations or constraints are added, as per the instructions.
 
-* Deployment instructions
-
-* ...
+* The whole app was built and tested within the 40-minute window.
