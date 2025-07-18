@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @envelope %>
+
+<div>
+  <%= link_to "Edit this envelope", edit_envelope_path(@envelope) %> |
+  <%= link_to "Back to envelopes", envelopes_path %>
+
+  <%= button_to "Destroy this envelope", @envelope, method: :delete %>
+</div>

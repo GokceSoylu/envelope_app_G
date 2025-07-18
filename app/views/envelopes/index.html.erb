@@ -1,0 +1,15 @@
+<h1>All Envelopes</h1>
+<%=link_to 'add envelope ', new_envelope_path, class:"btn"%>
+<div style="display:flex; flex-wrap:wrap;gap:20px;">
+  <% @envelopes.each do |envelope| %>
+  <div>
+    <h3><%=envelope.name%></h3>
+    <p> <strong>Amount</strong> $<%=envelope.amount%> </p>
+    <%=link_to 'edit', edit_envelope_path(envelope),class:"btn"%>
+    <%=link_to 'delete',envelope,method: :delete,class:"btn"%>
+  </div>
+  <%end%>
+</div>
+
+  
+

@@ -1,0 +1,14 @@
+<h1>move income to envelope</h1>
+<%= form_with url: "/transactions/do_move", method: :post do%>
+    <div>
+        <label>Select Envelope</label>
+        <%= select_tag :envelope_id, options_from_collection_for_select(@envelopes, :id, :name)%>
+
+    </div>
+    <div>
+        <label >Amount </label>
+        <%= number_field_tag :amount, nil, step: 0.01 %>
+    </div>
+    <%= submit_tag "Transfer"%>
+    <%end%>
+

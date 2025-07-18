@@ -1,0 +1,11 @@
+<% content_for :title, "New envelope" %>
+
+<h1>New envelope</h1>
+
+<%= render "form", envelope: @envelope %>
+
+<br>
+
+<div>
+  <%= link_to "Back to envelopes", envelopes_path %>
+</div>
